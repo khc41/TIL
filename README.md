@@ -15,3 +15,4 @@
 ## 공부해야하는 리스트
 - GC 로그 분석
 - Canary 배포
+- Debezium
