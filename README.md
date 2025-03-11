@@ -15,3 +15,7 @@
 ## 공부해야하는 리스트
 - Canary 배포
 - Debezium
+
+## To-do 리스트
+- GC 로그 분석
+- redisson, 데코레이터 패턴 적용해서 동시성 이슈 해결
