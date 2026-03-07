@@ -36,13 +36,20 @@ $ARGUMENTS로 받은 파일을 처리합니다:
    - 형식: `- [YYYY-MM-DD - 제목](./YYYY-MM-DD.md)`
    - 날짜 역순으로 정렬 (최신이 위로)
 
-4. Git 작업:
+4. Git 작업 (로컬 커밋 + 원격 푸시):
    ```bash
    git add $ARGUMENTS <category>/README.md
-   git commit -m "Add TIL: [제목]"
+   git commit -m "Add TIL: [제목]
+
+   Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
    git push origin master
    ```
 
 5. 성공 메시지 출력
+   - 커밋 완료
+   - 원격 저장소(origin master)에 푸시 완료
+   - 파일 경로 및 제목 표시
 
-**Note**: 각 카테고리별 README.md를 자동으로 생성하여 파일 목록을 관리합니다.
+**Note**:
+- 각 카테고리별 README.md를 자동으로 생성하여 파일 목록을 관리합니다.
+- 로컬 커밋 후 자동으로 원격 저장소에 푸시됩니다.
