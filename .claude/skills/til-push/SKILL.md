@@ -41,15 +41,19 @@ description: 작성한 TIL 문서를 README에 자동으로 추가하고 Git com
    - books/designing-data-intensive-applications/ → DDIA Book
    - books/system-design-interview/ → System Design Book
 
-4. 카테고리별 INDEX.md 생성 또는 업데이트
-   - 각 카테고리 폴더에 INDEX.md 생성 (README.md 아님)
-   - 형식: `- [YYYY-MM-DD - 제목](./YYYY-MM-DD.md)`
-   - 날짜 역순으로 정렬 (최신이 위로)
+4. 상위 카테고리 INDEX.md 업데이트
+   - INDEX.md는 **상위 카테고리 폴더** 하나에만 존재 (하위 폴더에 별도 생성 금지)
+     - `database-and-storage/INDEX.md`, `distributed-systems/INDEX.md` 등
+     - `database-and-storage/nosql/INDEX.md` 같은 하위 폴더 INDEX.md는 만들지 않음
+   - INDEX.md 내부는 하위 디렉토리별로 `## subdirectory-name` 섹션 헤더로 구분
+   - 형식: `- [YYYY-MM-DD - 제목](./하위폴더/파일명.md)`
+   - 같은 섹션 내에서 날짜 역순으로 정렬 (최신이 위로)
    - README.md는 건드리지 않음 (수동 관리)
+   - INDEX.md가 없으면 새로 생성, 있으면 해당 섹션에 항목 추가
 
 5. Git 작업 (로컬 커밋 + 원격 푸시):
    ```bash
-   git add <til-file> <category>/INDEX.md
+   git add <til-file> <상위-category>/INDEX.md
    git commit -m "Add TIL: [추출된 제목]
 
    Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
@@ -63,6 +67,6 @@ description: 작성한 TIL 문서를 README에 자동으로 추가하고 Git com
 
 **Note**:
 - 파일 경로를 직접 입력할 필요 없이 자동으로 감지합니다.
-- 각 카테고리별 INDEX.md를 자동으로 생성하여 파일 목록을 관리합니다.
+- INDEX.md는 최상위 카테고리 폴더에만 하나씩 존재하며, 하위 폴더별로 섹션을 나눠 관리합니다.
 - README.md는 수동 관리 (각 카테고리 INDEX.md로의 링크만 포함).
 - 로컬 커밋 후 자동으로 원격 저장소에 푸시됩니다.
