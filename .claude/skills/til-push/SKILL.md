@@ -1,15 +1,25 @@
 ---
 name: til-push
-description: 작성한 TIL 문서를 README에 자동으로 추가하고 Git commit & push 합니다. 파일 경로를 인자로 받습니다.
+description: 작성한 TIL 문서를 README에 자동으로 추가하고 Git commit & push 합니다. 변경된 파일을 자동으로 감지합니다.
 ---
 
 # TIL Push
 
-$ARGUMENTS로 받은 파일을 처리합니다:
+인자 없이 실행됩니다. 변경된 TIL 파일을 자동으로 감지하여 처리합니다:
 
-1. 파일을 읽어서 제목 추출 (첫 번째 ## 제목)
+1. 변경된 TIL 파일 자동 감지
+   - `git diff origin/master --name-only`로 현재 브랜치와 원격 master 비교
+   - 만약 로컬 커밋이 없다면 `git status --short`로 untracked/modified 파일 감지
+   - `.md` 확장자이고 카테고리 폴더 내에 있는 파일만 대상 (README.md, template*.md 제외)
+   - 감지된 파일이 없으면 사용자에게 알림 후 종료
+   - 감지된 파일이 여러 개이면 사용자에게 목록을 보여주고 어떤 파일인지 확인
 
-2. 파일 경로로 카테고리 파악
+2. 파일을 읽어서 제목 추출
+   - 파일 내 첫 번째 `#` 또는 `##` 헤딩에서 이모지를 제거한 텍스트를 제목으로 사용
+   - 예: `# 📅 2026-03-07` → 날짜만 있으면 그 다음 헤딩 사용
+   - 예: `## 레디스 캐시 전략` → "레디스 캐시 전략"
+
+3. 파일 경로로 카테고리 파악
    - database-and-storage/relational-database/ → Relational Database
    - database-and-storage/nosql/ → NoSQL
    - database-and-storage/architecture/ → Database Architecture
@@ -31,25 +41,28 @@ $ARGUMENTS로 받은 파일을 처리합니다:
    - books/designing-data-intensive-applications/ → DDIA Book
    - books/system-design-interview/ → System Design Book
 
-3. 카테고리별 README 생성 또는 업데이트
-   - 각 카테고리 폴더에 README.md 생성
+4. 카테고리별 INDEX.md 생성 또는 업데이트
+   - 각 카테고리 폴더에 INDEX.md 생성 (README.md 아님)
    - 형식: `- [YYYY-MM-DD - 제목](./YYYY-MM-DD.md)`
    - 날짜 역순으로 정렬 (최신이 위로)
+   - README.md는 건드리지 않음 (수동 관리)
 
-4. Git 작업 (로컬 커밋 + 원격 푸시):
+5. Git 작업 (로컬 커밋 + 원격 푸시):
    ```bash
-   git add $ARGUMENTS <category>/README.md
-   git commit -m "Add TIL: [제목]
+   git add <til-file> <category>/INDEX.md
+   git commit -m "Add TIL: [추출된 제목]
 
-   Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+   Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
    git push origin master
    ```
 
-5. 성공 메시지 출력
+6. 성공 메시지 출력
    - 커밋 완료
    - 원격 저장소(origin master)에 푸시 완료
    - 파일 경로 및 제목 표시
 
 **Note**:
-- 각 카테고리별 README.md를 자동으로 생성하여 파일 목록을 관리합니다.
+- 파일 경로를 직접 입력할 필요 없이 자동으로 감지합니다.
+- 각 카테고리별 INDEX.md를 자동으로 생성하여 파일 목록을 관리합니다.
+- README.md는 수동 관리 (각 카테고리 INDEX.md로의 링크만 포함).
 - 로컬 커밋 후 자동으로 원격 저장소에 푸시됩니다.

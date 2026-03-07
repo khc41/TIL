@@ -12,43 +12,32 @@
 
 ## 📚 카테고리
 
-### 🗄️ [Database & Storage](./database-and-storage/)
-- [Relational Database](./database-and-storage/relational-database/) - JPA, MySQL, Query Optimization
-- [NoSQL](./database-and-storage/nosql/) - Elasticsearch, HBase, Document Store
-- [Architecture](./database-and-storage/architecture/) - Sharding, Replication, DB Sync
+### 🗄️ [Database & Storage](./database-and-storage/INDEX.md)
+Relational Database · NoSQL · Architecture
 
-### 🌐 [Distributed Systems](./distributed-systems/)
-- [Message Queue](./distributed-systems/message-queue/) - Kafka, SQS, Event-Driven Architecture
-- [System Design](./distributed-systems/system-design/) - Scalability, Load Balancing, Traffic Handling
-- [Microservices](./distributed-systems/microservices/) - DDD, Service Architecture, API Gateway
+### 🌐 [Distributed Systems](./distributed-systems/INDEX.md)
+Message Queue · System Design · Microservices
 
-### ⚡ [Cache & Performance](./cache-and-performance/)
-- [Cache Strategy](./cache-and-performance/cache-strategy/) - Redis, Cache Patterns, Thundering Herd
-- [Concurrency](./cache-and-performance/concurrency/) - Distributed Lock, Race Condition
-- [Performance Tuning](./cache-and-performance/performance-tuning/) - Optimization, Profiling
+### ⚡ [Cache & Performance](./cache-and-performance/INDEX.md)
+Cache Strategy · Concurrency · Performance Tuning
 
-### ☕ [Java & JVM](./java-and-jvm/)
-- [Java Core](./java-and-jvm/java-core/) - Virtual Threads, Core APIs
-- [Garbage Collection](./java-and-jvm/garbage-collection/) - GC Algorithms, Memory Management
+### ☕ [Java & JVM](./java-and-jvm/INDEX.md)
+Java Core · Garbage Collection
 
-### ✨ [Code Quality](./code-quality/)
-- [Improvement Series](./code-quality/improvement-series/) - Code Quality 개선 기법 시리즈
-- [Best Practices](./code-quality/best-practices/) - Clean Code, Code Review
+### ✨ [Code Quality](./code-quality/INDEX.md)
+Improvement Series · Best Practices
 
-### 🛠️ [Infrastructure & DevOps](./infrastructure-and-devops/)
-- [Spring Framework](./infrastructure-and-devops/spring-framework/) - Spring Batch, WebFlux, Armeria
-- [Realtime API](./infrastructure-and-devops/realtime-api/) - REST, SSE, WebSocket
+### 🛠️ [Infrastructure & DevOps](./infrastructure-and-devops/INDEX.md)
+Spring Framework · Realtime API
 
-### 🤖 [AI & Automation](./ai-and-automation/)
-- [AI Tools](./ai-and-automation/ai-tools/) - MCP, Copilot, AI-assisted Development
-- [if kakao 2025](./ai-and-automation/if-kakao-2025/) - AI Conference Sessions
+### 🤖 [AI & Automation](./ai-and-automation/INDEX.md)
+AI Tools
 
-### 🎤 [Conferences](./conferences/)
-Conference talks and event notes
+### 🎤 [Conferences](./conferences/INDEX.md)
+if kakao 2025
 
-### 📖 [Books](./books/)
-- [데이터 중심 애플리케이션 설계](./books/designing-data-intensive-applications/)
-- [가상면접 시스템 설계](./books/system-design-interview/)
+### 📖 [Books](./books/INDEX.md)
+데이터 중심 애플리케이션 설계 · 가상면접 시스템 설계
 
 ## 공부해야하는 리스트
 - Elasticsearch
@@ -58,5 +47,5 @@ Conference talks and event notes
 - [ ] redisson, 데코레이터 패턴 적용해서 동시성 이슈 해결
 
 ## Claude Code Skills
-- `/til-new <category>` - 새로운 TIL 파일 생성
-- `/til-push <file-path>` - README 업데이트 및 Git 푸시
+- `/til-new <category> <type>` - 새로운 TIL 파일 생성
+- `/til-push` - INDEX.md 업데이트 및 Git 푸시 (파일 자동 감지)
