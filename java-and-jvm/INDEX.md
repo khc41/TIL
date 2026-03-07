@@ -1,7 +1,12 @@
 # Index
 
+## java-core
+
 - [2025-02-22 - 2025-02-22](./java-core/2025-02-22.md)
 - [2025-02-21 - 2025-02-21](./java-core/2025-02-21.md)
 - [2025-02-20 - 2025-02-20](./java-core/2025-02-20.md)
+
+## garbage-collection
+
 - [2025-05-09 - Java HashMap은 어떻게 동작하는가?](./garbage-collection/2025-05-09.md)
 - [2025-05-08 - 하나의 메모리 누수를 잡기까지](./garbage-collection/2025-05-08.md)

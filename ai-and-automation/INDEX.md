@@ -1,5 +1,7 @@
 # Index
 
+## ai-tools
+
 - [2025-09-22 - https://tech.kakaopay.com/post/kakaopay-mcp-agent-toolkit/](./ai-tools/2025-09-22.md)
 - [2025-06-21 - n8n 완벽가이드 | 초보자도 1시간 만에 업무 자동화 시작하기](./ai-tools/2025-06-21.md)
 - [2025-06-18 - AI와 글쟁이의 동행: 코드 주면 API 레퍼런스 써드려요](./ai-tools/2025-06-18.md)

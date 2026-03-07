@@ -1,11 +1,16 @@
 # Index
 
+## designing-data-intensive-applications
+
 - [ch01 - 신뢰할 수 있고 확장 가능하며 유지보수하기 쉬운 애플리케이션](./designing-data-intensive-applications/ch01-신뢰할수있고확장가능하며유지보수하기쉬운애플리케이션.md)
 - [ch02 - 데이터 모델과 질의 언어](./designing-data-intensive-applications/ch02-데이터모델과질의언어.md)
 - [ch03 - 저장소와 검색](./designing-data-intensive-applications/ch03-저장소와검색.md)
 - [ch04 - 부호화](./designing-data-intensive-applications/ch04-부호화.md)
 - [ch05 - 복제](./designing-data-intensive-applications/ch05-복제.md)
 - [ch07 - 트랜잭션](./designing-data-intensive-applications/ch07-트랜잭션.md)
+
+## system-design-interview
+
 - [ch01 - 사용자 수에 따른 규모 확장성](./system-design-interview/ch01-사용자수에따른규모확장성.md)
 - [ch02 - 개략적인 규모 추정](./system-design-interview/ch02-개략적인규모추정.md)
 - [ch03 - 시스템 설계 면접 공략법](./system-design-interview/ch03-시스템설계면접공략법.md)

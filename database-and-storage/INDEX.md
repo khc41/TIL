@@ -1,5 +1,7 @@
 # Index
 
+## relational-database
+
 - [2025-10-18 - 2025-10-18](./relational-database/2025-10-18.md)
 - [2025-09-29 - 우리의 애플리케이션에서 PreparedStatement는 어떻게 동작하고 있는가](./relational-database/2025-09-29.md)
 - [2025-04-15 - HikariCP Dead lock에서 벗어나기 (실전편)](./relational-database/2025-04-15.md)
@@ -10,10 +12,16 @@
 - [2025-03-06 - 2025-03-06](./relational-database/2025-03-06.md)
 - [2025-03-02 - 2025-03-02](./relational-database/2025-03-02.md)
 - [2025-03-01 - 2025-03-01](./relational-database/2025-03-01.md)
+
+## nosql
+
 - [2025-04-29 - LINE 스토리지, 한달에 수십억 건의 데이터를 Redis와 HBase에 저장하다.](./nosql/2025-04-29.md)
 - [2025-04-28 - LINE 소셜 네트워크 서비스의 아키텍처](./nosql/2025-04-28.md)
 - [2025-03-28 - elasticsearch로 로그 검색 시스템 만들기](./nosql/2025-03-28.md)
 - [2025-03-26 - NELO Alaska: 대용량 로그 데이터 저장을 위한 Apache Iceberg 도입기](./nosql/2025-03-26.md)
+
+## architecture
+
 - [2025-05-11 - SSD는 소프트웨어 아키텍처를 어떻게 바꾸고 있는가?](./architecture/2025-05-11.md)
 - [2025-04-30 - NHN의 안과 밖: Sharding Platform](./architecture/2025-04-30.md)
 - [2025-03-14 - Debezium으로 DB 동기화 구축하기](./architecture/2025-03-14.md)

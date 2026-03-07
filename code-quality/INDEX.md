@@ -1,5 +1,7 @@
 # Index
 
+## improvement-series
+
 - [2025-06-03 - 코드 품질 개선 기법 12편: 세트 할인](./improvement-series/2025-06-03.md)
 - [2025-05-31 - 코드 품질 개선 기법 11편: 반복되는 호출에 함수도 지친다](./improvement-series/2025-05-31.md)
 - [2025-05-30 - 코드 품질 개선 기법 10편: 적절한 거리 유지에 신경 쓰자](./improvement-series/2025-05-30.md)
@@ -12,6 +14,9 @@
 - [2025-04-01 - 코드 품질 개선 기법 3편: 전략 없는 전략](./improvement-series/2025-04-01.md)
 - [2025-03-30 - 코드 품질 개선 기법 2편: 확인 여부를 확인했나요?](./improvement-series/2025-03-30.md)
 - [2025-03-29 - 코드 품질 개선 기법 1편: 한 번 엎지른 <error>는 다시 주워 담지 못한다](./improvement-series/2025-03-29.md)
+
+## best-practices
+
 - [2026-02-19 - Claude Code Action: 조직 전반의 코드 품질을 지키는 AI 코드 리뷰 플랫폼화](./best-practices/2026-02-19.md)
 - [2025-04-26 - 백엔드 개발자를 꿈꾸는 학생개발자에게](./best-practices/2025-04-26.md)
 - [2025-04-11 - 🎥 시청한 개발 관련 영상: [일잘러 연구소: 소프트 스킬을 키우는 효과적인 방법](https://www.youtube.com/watch?v=9CRfywZvs7s)](./best-practices/2025-04-11.md)

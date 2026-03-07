@@ -1,14 +1,22 @@
 # Index
 
+## system-design
+
 - [2025-05-22 - 트위터 Storm 소개](./system-design/2025-05-22.md)
 - [2025-05-13 - 대용량 세션을 위한 로드밸런서](./system-design/2025-05-13.md)
 - [2025-04-27 - Storm과 Elasticsearch Percolator를 이용한 NELO2 알람 기능 개선](./system-design/2025-04-27.md)
 - [2025-03-18 - 서버 증설 없이 처리하는 대규모 트래픽](./system-design/2025-03-18.md)
 - [2025-03-07 - 선착순 이벤트 시스템에서 발생가능한 동시성 문제와 해결방안 탐구(redis, kafka)](./system-design/2025-03-07.md)
+
+## microservices
+
 - [2025-09-25 - 카카오페이 여신코어 DDD(Domain Driven Design, 도메인 주도 설계)로 구축하기](./microservices/2025-09-25.md)
 - [2025-03-12 - 🎥 시청한 컨퍼런스 영상: [ㄷㄷㄷ: Domain Driven Design과 적용 사례공유 / if(kakao)2022](https://www.youtube.com/watch?v=4QHvTeeTsj0)](./microservices/2025-03-12.md)
 - [2025-02-25 - 2025-02-25](./microservices/2025-02-25.md)
 - [2025-02-23 - 2025-02-23](./microservices/2025-02-23.md)
+
+## message-queue
+
 - [2025-10-11 - 지연이체 서비스 개발기: 은행 점검 시간 끝나면 송금해 드릴게요! (feat. 발표 후기)](./message-queue/2025-10-11.md)
 - [2025-03-20 - 🎥 시청한 컨퍼런스 영상: [신뢰성 있는 카프카 애플리케이션을 만드는 3가지 방법 (최원영 Cory)](https://www.youtube.com/watch?v=7_VdIFH6M6Q)](./message-queue/2025-03-20.md)
 - [2025-03-15 - 일 3,000만 건의 네이버페이 주문 메시지를 처리하는 Kafka 시스템의 무중단 전환 사례](./message-queue/2025-03-15.md)
