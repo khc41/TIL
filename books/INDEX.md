@@ -7,6 +7,7 @@
 - [ch03 - 저장소와 검색](./designing-data-intensive-applications/ch03-저장소와검색.md)
 - [ch04 - 부호화](./designing-data-intensive-applications/ch04-부호화.md)
 - [ch05 - 복제](./designing-data-intensive-applications/ch05-복제.md)
+- [ch06 - 파티셔닝](./designing-data-intensive-applications/ch06-파티셔닝.md)
 - [ch07 - 트랜잭션](./designing-data-intensive-applications/ch07-트랜잭션.md)
 
 ## system-design-interview
