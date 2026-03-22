@@ -9,6 +9,7 @@
 - [ch05 - 복제](./designing-data-intensive-applications/ch05-복제.md)
 - [ch06 - 파티셔닝](./designing-data-intensive-applications/ch06-파티셔닝.md)
 - [ch07 - 트랜잭션](./designing-data-intensive-applications/ch07-트랜잭션.md)
+- [ch08 - 분산 시스템의 골칫거리](./designing-data-intensive-applications/ch08-분산시스템의골칫거리.md)
 
 ## system-design-interview
 
