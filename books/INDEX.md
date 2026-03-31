@@ -10,6 +10,7 @@
 - [ch06 - 파티셔닝](./designing-data-intensive-applications/ch06-파티셔닝.md)
 - [ch07 - 트랜잭션](./designing-data-intensive-applications/ch07-트랜잭션.md)
 - [ch08 - 분산 시스템의 골칫거리](./designing-data-intensive-applications/ch08-분산시스템의골칫거리.md)
+- [ch09 - 일관성과 합의](./designing-data-intensive-applications/ch09-일관성과합의.md)
 
 ## system-design-interview
 
