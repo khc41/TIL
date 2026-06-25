@@ -2,6 +2,8 @@
 
 ## system-design
 
+- [2026-06-25 - Tech blog: Behind AWS S3’s Massive Scale](./system-design/2026-06-25.md)
+
 - [2025-05-22 - 트위터 Storm 소개](./system-design/2025-05-22.md)
 - [2025-05-13 - 대용량 세션을 위한 로드밸런서](./system-design/2025-05-13.md)
 - [2025-04-27 - Storm과 Elasticsearch Percolator를 이용한 NELO2 알람 기능 개선](./system-design/2025-04-27.md)
