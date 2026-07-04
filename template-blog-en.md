@@ -1,0 +1,6 @@
+## 📅 2026-00-00
+### 📖 Tech blog: [Title](URL)
+#### ✏️ Summation
+- ...
+#### 💡 Reflections
+- ...

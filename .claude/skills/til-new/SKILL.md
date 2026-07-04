@@ -6,7 +6,9 @@ description: 새로운 TIL 파일을 생성합니다. 카테고리와 타입을 
 # TIL 새 파일 생성
 
 $ARGUMENTS를 "카테고리 타입" 형태로 받아서 다음 작업을 수행하세요:
-(예: `mysql blog`, `kafka video`, `conference`, `ddia book`)
+(예: `mysql blog`, `kafka video`, `conference`, `ddia book`, `microservices blog-en`)
+
+**URL만 단독으로 입력된 경우**: 카테고리를 추론하고 타입은 `blog-en`(영문 템플릿)을 기본값으로 사용하세요.
 
 1. 카테고리 매핑 확인:
    - mysql, jpa, sql, postgres, db → database-and-storage/relational-database/
@@ -30,7 +32,8 @@ $ARGUMENTS를 "카테고리 타입" 형태로 받아서 다음 작업을 수행�
    - system-design-book → books/system-design-interview/
 
 2. 타입에 따른 템플릿 선택:
-   - blog 또는 생략 → template-blog.md (기본)
+   - blog → template-blog.md (한국어)
+   - blog-en 또는 URL만 입력 → template-blog-en.md (영문, 기본값)
    - video → template-video.md
    - conference → template-conference.md
    - book → template-book.md
@@ -43,13 +46,16 @@ $ARGUMENTS를 "카테고리 타입" 형태로 받아서 다음 작업을 수행�
      - 제목의 공백은 제거
 
 4. 해당 템플릿 파일을 읽어서 새 파일에 복사
-   - 템플릿 파일은 프로젝트 루트(`/`)에 위치: `template-blog.md`, `template-video.md`, `template-conference.md`, `template-book.md`
+   - 템플릿 파일은 프로젝트 루트(`/`)에 위치: `template-blog.md`, `template-blog-en.md`, `template-video.md`, `template-conference.md`, `template-book.md`
    - 템플릿 내의 "2026-00-00"을 오늘 날짜로 치환
+   - `blog-en` 템플릿 사용 시 `[Title](URL)` 부분에 실제 제목과 URL을 채워 넣기
 
 5. 생성된 파일 경로를 사용자에게 알려주고 파일 열기 안내
 
 **사용 예시:**
-- `/til-new mysql blog` - 블로그 템플릿으로 MySQL TIL 생성
+- `/til-new mysql blog` - 한국어 블로그 템플릿으로 MySQL TIL 생성
+- `/til-new microservices blog-en` - 영문 블로그 템플릿으로 Microservices TIL 생성
+- `/til-new https://example.com/article` - URL만 입력 시 카테고리 추론 후 영문 템플릿으로 생성
 - `/til-new kafka video` - 영상 템플릿으로 Kafka TIL 생성
 - `/til-new conference` - 컨퍼런스 템플릿으로 TIL 생성
 - `/til-new ddia book` - 챕터 번호/제목 입력받아 DDIA TIL 생성 (예: ch06-파티셔닝.md)
