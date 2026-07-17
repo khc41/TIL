@@ -2,6 +2,8 @@
 
 ## system-design
 
+- [2026-07-14 - Tech blog: Building Service Topology at Scale: Architecture Challenges and Lessons Learned](./system-design/2026-07-14.md)
+
 - [2026-06-25 - Tech blog: Behind AWS S3’s Massive Scale](./system-design/2026-06-25.md)
 
 - [2025-05-22 - 트위터 Storm 소개](./system-design/2025-05-22.md)
