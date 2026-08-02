@@ -21,7 +21,7 @@
 - [2025-03-26 - NELO Alaska: 대용량 로그 데이터 저장을 위한 Apache Iceberg 도입기](./nosql/2025-03-26.md)
 
 ## architecture
-
+- [2026-08-02 -  📖 Tech blog: How Discord Stores Trillions of Message](./architecture/2026-08-02.md)
 - [2025-05-11 - SSD는 소프트웨어 아키텍처를 어떻게 바꾸고 있는가?](./architecture/2025-05-11.md)
 - [2025-04-30 - NHN의 안과 밖: Sharding Platform](./architecture/2025-04-30.md)
 - [2025-03-14 - Debezium으로 DB 동기화 구축하기](./architecture/2025-03-14.md)
